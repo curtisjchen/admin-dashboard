@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans serif
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 180px 1fr;
+    grid-template-columns: 220px 1fr;
+    height: 100vh;
+}
+
+.grid-item {
+    text-align: center;
+    text-justify: center;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: cornflowerblue;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    color: white;
+    font-weight: 900;
+    padding-left: 40px;
+}
+
+.dashboard {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.project-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 14px;
+    color: rgb(112, 112, 112);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgb(221, 221, 221);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30px repeat(3, 1fr);
+}
+
+.your-projects {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.project-item {
+    margin: 20px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.welcome-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rightbar-card {
+
+}
+
+.section-title {
+    color: darkslategray;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
